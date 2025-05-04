@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BestStemSplitterEver</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css"
+    />
+    <link rel="stylesheet" href="./static/style.css" />
+  </head>
+  <body>
+    <h1>BestStemSplitterEver</h1>
+
+    <div class="container">
+      <div>
+        <h2>Upload Song for Stem Splitting</h2>
+        <p>
+          Drag and drop your audio files here or click to browse. Supported
+          formats: MP3, WAV, FLAC, OGG, M4A, AAC. Maximum file size: 100MB.
+        </p>
+        <form id="upload-form" action="/upload" class="dropzone">
+          <div class="dz-message" data-dz-message>
+            <span>Drop audio files here to split into stems</span>
+          </div>
+        </form>
+
+        <div id="status" class="status"></div>
+      </div>
+
+      <div class="stems-container">
+        <h2>Available Stems</h2>
+        <p>Download your processed stems here:</p>
+        <div id="stems-list" class="stems-list">
+          <p>No stems available yet. Upload a song to generate stems.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
+    <script src="./static/index.js"></script>
+  </body>
+</html>

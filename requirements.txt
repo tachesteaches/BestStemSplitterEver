@@ -5,3 +5,5 @@ demucs>=4.0.0
 gdown>=4.5.1
 torch==2.5.1
 torchaudio==2.5.1
+werkzeug>=2.0.0
+flask>=2.0.0
