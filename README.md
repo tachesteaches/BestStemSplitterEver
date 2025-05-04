@@ -12,7 +12,7 @@ A powerful audio stem splitter that detects key and BPM, separates tracks into s
 
 ## Requirements
 
-- Python 3.8 or higher
+- Python 3.8 or higher (I'm on Python 3.11.11 and it's working. 3.13 didn't work for a friend)
 - Demucs (for stem separation)
 - Drumsep (for drum separation)
 
