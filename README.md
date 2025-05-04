@@ -25,23 +25,34 @@ A powerful audio stem splitter that detects key and BPM, separates tracks into s
    cd BestStemSplitterEver
    ```
 
-2. Install Python dependencies:
+2. Run the setup script:
+
+   On Mac / Linux:
 
    ```
-   pip install -r requirements.txt
+   ./setup.sh
    ```
 
-3. Install Demucs:
+   or
+
+   On Windows:
 
    ```
-   pip install -U demucs
+   ./setup.bat
    ```
 
-4. Install Drumsep:
+3. Run the script with:
+
+   On Mac / Linux:
 
    ```
-   cd drumsep &&
-   bash drumsepInstall
+   ./run.sh {PATH TO YOUR AUDIO FILE - EASY TO JUST DRAG AND DROP IT ONTO TERMINAL}
+   ```
+
+   On Windows:
+
+   ```
+   run.bat {PATH TO YOUR AUDIO FILE - EASY TO JUST DRAG AND DROP IT ONTO TERMINAL}
    ```
 
 ## Cross-Platform Installation
@@ -158,8 +169,10 @@ If you encounter any issues with model loading, you may need to set the followin
 export TORCH_WEIGHTS_ONLY=0
 <<<<<<< HEAD
 ```
+
 =======
->>>>>>> ddee2710f5aba27dc4eacbbdfdfcb4651a7700e9
+
+> > > > > > > ddee2710f5aba27dc4eacbbdfdfcb4651a7700e9
 
 ## Output
 
@@ -185,7 +198,7 @@ MIT License
 - [Demucs](https://github.com/facebookresearch/demucs) for audio source separation
 - [Librosa](https://github.com/librosa/librosa) for audio analysis
 - [drumSep](https://github.com/inagoy/drumsep) for drum separation
-<<<<<<< HEAD
+  <<<<<<< HEAD
 
 ```
 

@@ -6,7 +6,7 @@ paths:
   temp_dir: "./temp"
 
   # Where final stems will be saved (will be created if it doesn't exist)
-  output_dir: "./stems"
+  output_dir: "/Users/lexchristopherson/Music/Stems"
 
 # Tools configuration
 tools:
