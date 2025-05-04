@@ -1,0 +1,32 @@
+# BestStemSplitterEver Configuration
+
+# Directories
+paths:
+  # Where temporary demucs files will be stored (will be created if it doesn't exist)
+  temp_dir: "./temp"
+
+  # Where final stems will be saved (will be created if it doesn't exist)
+  output_dir: "./stems"
+
+# Tools configuration
+tools:
+  # Path to drumsep directory (should contain the drumsep script)
+  drumsep_dir: "./drumsep"
+
+  # Demucs model to use
+  # Available models: htdemucs, htdemucs_6s, htdemucs_ft, mdx_extra, mdx_extra_q
+  # htdemucs: Original HT model, 4 sources (vocals, drums, bass, other)
+  # htdemucs_6s: 6 sources (adds piano and guitar, generally more accurate)
+  # mdx_extra: Higher quality but slower
+  demucs_model: "htdemucs_6s"
+
+# Output preferences
+output:
+  # Whether to organize output in folders by song name
+  organize_by_song: true
+
+  # Whether to include key and BPM in filename
+  include_key_bpm: true
+
+  # Format for output filenames: {key}, {camelot}, {bpm}, {name}, {stem}
+  filename_format: "{key} - {bpm}BPM - {name} - ({stem})"
